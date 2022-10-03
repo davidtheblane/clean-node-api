@@ -7,9 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "*.js": [
-      "standard"
-    ]
+    "*.js": "[standard]"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
   },
   "homepage": "https://github.com/davidtheblane/clean-node-api#readme",
   "devDependencies": {
+    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "standard": "^17.0.0"
   }
