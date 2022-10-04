@@ -5,17 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:staged": "jest",
     "prepare": "husky install"
   },
   "standard": {
     "env": [
       "jest"
-    ]
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "standard --fix",
-      "git add"
     ]
   },
   "repository": {
