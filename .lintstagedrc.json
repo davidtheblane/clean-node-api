@@ -1,7 +1,0 @@
-{
-  "*.{js,jsx}": [
-    "standard --fix",
-    "npm run test:staged",
-    "git add"
-  ]
-}
