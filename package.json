@@ -4,9 +4,10 @@
   "description": "estudo de criação de api em node com TDD e seguindos os principios do clean code.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --silent --colors",
-    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
-    "test:ci": "jest --coverage --noStackTrace --silent",
+    "test": "jest --silent --colors --noStackTrace --passWithNoTests",
+    "test:unit": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage",
     "prepare": "husky install"
   },
   "standard": {
