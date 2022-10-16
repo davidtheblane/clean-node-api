@@ -4,7 +4,7 @@
  */
 
 module.exports = {
-  collectCoverage: false,
   coverageDirectory: 'coverage',
-  coverageProvider: 'v8'
+  coverageProvider: 'v8',
+  testEnviroment: 'node'
 }
